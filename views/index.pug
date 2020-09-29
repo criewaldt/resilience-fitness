@@ -8,12 +8,12 @@ html(lang='en')
 		
         title Resilience Fitness | New York, NY
         
-        link(rel="icon" type="image/x-icon" href="assets/img/favicon.ico")
+        //link(rel="icon" type="image/x-icon" href="assets/img/favicon.ico")
         script(src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous")
-        link(href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet")
+        //link(href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet")
+        //link(href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet")
 		
-        include customfonts.html
+        //include customfonts.html
         
         // Theme CSS
         link(href='css/greyscale.css', rel='stylesheet')
@@ -29,9 +29,9 @@ html(lang='en')
                 div.collapse.navbar-collapse#navbarResponsive
                     ul.navbar-nav.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#about") Strength
+                            a.nav-link.js-scroll-trigger(href="#about") Character
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#projects") Character
+                            a.nav-link.js-scroll-trigger(href="#projects") Strength
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href="#contact") Assessment
         // Masthead
@@ -42,31 +42,36 @@ html(lang='en')
                     //h1.mx-auto.my-0.text-uppercase
                     //    | Resilience Fitness
                     h2.text-white-50.mx-auto.mt-2.mb-5
-                        | Life doesn’t get easier or more forgiving, we get stronger and more resilient.
+                        | Life doesn’t get easier or more forgiving.
+                        br
+                        | We get stronger and more resilient.
                     
         // About
         section.about-section.text-center#about
             div.container
                 div.row
                     div.col-lg-8.mx-auto
-                        h4.text-white.mb-4
+                        h4.text-white-50.mb-4
                             | Being physically active is one of the most important actions that people of all ages can take to improve their
                             |    health. Physical activity fosters normal growth and development and can make people feel better, function
                             |    better, sleep better, and reduce the risk of a large number of chronic diseases.
                         br
-                        p.text-white-50
-                            | “Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved.” – Helen Keller
+                        br
                         
                         //p.text-white-50
                         //    | Health benefts start immediately after exercising, and even short episodes of physical activity are benefcial.
                         h2.text-white.mb-4
                             | What is Resilience Fitness?
-                        h4.text-white-50
-                            | Results Based Training & Nutrition
                             br
-                            | Mind & Body Wellness
                             br
-                            | A Guide To Your Inner Badass
+                        h5.text-white-50
+                            | Smart and Effective Training
+                            br
+                            br
+                            | Personalized Nutrition So You Can Achieve Your Goals
+                            br
+                            br
+                            | A Guide To Bringing Out Your Inner Badass
                             br
                             br
                             br
@@ -88,12 +93,14 @@ html(lang='en')
                     div.col-xl-4.col-lg-5
                         div.featured-text.text-center.text-lg-left
                             h4
-                                | My name is Paul
+                                | My Results
                             p.text-black-50.mb-0
-                                | Loving Father - FDNY Fire Marshal - ISSA Certified Trainer - BJJ Blue belt
-                                br
-                                br
-                                | 205lbs. -> 174lbs. No filters here, just a lot of sweat equity and discipline. 💪🏻 You can do it, and I can help you.
+                                | Looking better is the least valuable, most inconsequential, and least meaningful change I've experienced. Feeling better... waking up with more energy... 
+                                | getting a better nights sleep... having a better mood throughout my entire day... feeling stronger and having more stamina... that's so much more important, and it makes the journey worth it.
+                                //| Loving Father - FDNY Fire Marshal - ISSA Certified Trainer - BJJ Blue belt
+                                //br
+                                //br
+                                //| 205lbs. -> 174lbs. No filters here, just a lot of sweat equity and discipline. 💪🏻 You can do it, and I can help you.
                                 
                 // Project One Row
                 div.row.justify-content-center.no-gutters.mb-5.mb-lg-0
@@ -104,22 +111,23 @@ html(lang='en')
                             div.d-flex.h-100
                                 div.project-text.w-100.my-auto.text-center.text-lg-left
                                     h4.text-white
-                                        | A Plan Made For You
+                                        | Want to lose weight?
                                     p.mb-0.text-white-50
-                                        | Personalized for you. Not easy, but designed that way.
+                                        | Great, I can help! I'll make a plan personalized for you, and I'll provide nutritional guidance so that you can reach your goals without sacrificing the foods you love to eat.
                                     hr.d-none.d-lg-block.mb-0.ml-0
+                    
                 // Project Two Row
                 div.row.justify-content-center.no-gutters
                     div.col-lg-6
-                        img.img-fluid(src="assets/img/demo-image-02.jpg" alt="")
+                        img.img-fluid(src="img/fighterJet.jpg" alt="")
                     div.col-lg-6.order-lg-first
                         div.bg-black.text-center.h-100.project
                             div.d-flex.h-100
                                 div.project-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white
-                                        | My Meal Plans
+                                        | Thank You
                                     p.mb-0.text-white-50
-                                        | Nutrition is important
+                                        | We are inspired by the service you provide, the people you help and the community you support. To show gratitude, Resilience Fitness is offering special discounts for military and civil servants.
                                     hr.d-none.d-lg-block.mb-0.mr-0
 
         // Signup
@@ -165,9 +173,9 @@ html(lang='en')
                                 div.small.text-black-50
                                     | Paul helped me with a diet and exercise plan thats helped me lose weight and gain a lot of self confidence, and strength too! Thanks!
                                     
-                div.social.d-flex.justify-content-center
-                    a.mx-3(href="#!")
-                        i.fab.fa-twitter
+            div.social.d-flex.justify-content-center
+                a.mx-2(href="#!")
+                    i.fab.fa-instagram
                     
         footer.footer.bg-black.small.text-center.text-white-50
             div.container
@@ -180,3 +188,4 @@ html(lang='en')
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js")
         // Core theme JS
         script(src="js/scripts.js")
+        //script(src="js/scroll.js")

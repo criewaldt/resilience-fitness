@@ -612,6 +612,11 @@ pre code {
   padding-left: 0;
 }
 
+.iconCenter {
+  display: flex;
+  align-items: center;
+}
+
 .col-xl,
 .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
@@ -6466,6 +6471,7 @@ button.bg-black:focus {
 
 .d-flex {
   display: flex !important;
+  vertical-align: middle;
 }
 
 .d-inline-flex {
@@ -6540,6 +6546,7 @@ button.bg-black:focus {
 
   .d-md-flex {
     display: flex !important;
+    vertical-align: middle;
   }
 
   .d-md-inline-flex {
@@ -7682,6 +7689,7 @@ button.bg-black:focus {
 .mr-2,
 .mx-2 {
   margin-right: 0.5rem !important;
+  vertical-align: middle;
 }
 
 .mb-2,
@@ -10344,9 +10352,11 @@ body {
 }
 .contact-section .social {
   margin-top: 5rem;
+  
 }
 .contact-section .social a {
   text-align: center;
+  
   height: 3rem;
   width: 3rem;
   background: rgba(255, 255, 255, 0.1);
