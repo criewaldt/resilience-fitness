@@ -8,15 +8,28 @@ html(lang='en')
 		
         title Resilience Fitness | New York, NY
         
-        //link(rel="icon" type="image/x-icon" href="assets/img/favicon.ico")
+        link(rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png")
+        link(rel="manifest" href="/site.webmanifest")
+        
+        //script(src="https://use.fontawesome.com/fa83ed19c7.js")
+        
         script(src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous")
-        //link(href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet")
-        //link(href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet")
+
+        
+        link(href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet")
 		
         //include customfonts.html
         
         // Theme CSS
         link(href='css/greyscale.css', rel='stylesheet')
+        
+        
+        // contact form
+        <link rel="stylesheet" type="text/css" href="contactform/css/main.css">
+        
         
     body#page-top
         // Navigation
@@ -24,16 +37,16 @@ html(lang='en')
             div.container
                 a.navbar-brand.js-scroll-trigger(href="#page-top") ResilienceFitness.net
                 button.navbar-toggler.navbar-toggler-right(type="button", data-toggle="collapse", data-target="#navbarResponsive", aria-controls="navbarResponsive", aria-expanded="false", aria-label="Toggle navigation")
-                    |  Menu
+                    |  Menu  
                     i.fas.fa-bars
                 div.collapse.navbar-collapse#navbarResponsive
                     ul.navbar-nav.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#about") Character
+                            a.nav-link.js-scroll-trigger(href="#about") Character  
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#projects") Strength
+                            a.nav-link.js-scroll-trigger(href="#projects") Strength  
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#contact") Assessment
+                            a.nav-link.js-scroll-trigger(href="#contact") Assessment  
         // Masthead
         header.masthead
             div.container.d-flex.h-100.align-items-center
@@ -51,7 +64,7 @@ html(lang='en')
             div.container
                 div.row
                     div.col-lg-8.mx-auto
-                        h4.text-white-50.mb-4
+                        h5.text-white-50.mb-4
                             | Being physically active is one of the most important actions that people of all ages can take to improve their
                             |    health. Physical activity fosters normal growth and development and can make people feel better, function
                             |    better, sleep better, and reduce the risk of a large number of chronic diseases.
@@ -83,17 +96,25 @@ html(lang='en')
                             br
                             br
                 img.img-fluid(src="img/kettlebellBW.png" alt="")
+                
         // Projects
         section.projects-section.bg-light#projects
             div.container
                 // Featured Project Row
                 div.row.align-items-center.no-gutters.mb-4.mb-lg-5
+                    div.col-12.text-center
+                        p.text
+                            | “Success is not final, failure is not fatal. It is the courage to continue that counts." - Winston Churchill
+                        br
+                        br
+                        
                     div.col-xl-8.col-lg-7
                         img.img-fluid.mb-3.mb-lg-0(src="assets/img/paul.jpg" alt="")
                     div.col-xl-4.col-lg-5
                         div.featured-text.text-center.text-lg-left
                             h4
                                 | My Results
+                            br
                             p.text-black-50.mb-0
                                 | Looking better is the least valuable, most inconsequential, and least meaningful change I've experienced. Feeling better... waking up with more energy... 
                                 | getting a better nights sleep... having a better mood throughout my entire day... feeling stronger and having more stamina... that's so much more important, and it makes the journey worth it.
@@ -127,10 +148,10 @@ html(lang='en')
                                     h4.text-white
                                         | Thank You
                                     p.mb-0.text-white-50
-                                        | We are inspired by the service you provide, the people you help and the community you support. To show gratitude, Resilience Fitness is offering special discounts for military and civil servants.
+                                        | I am inspired by the service you provide, the people you help and the communities you support. To show gratitude, Resilience Fitness is offering special discounts for military and civil servants.
                                     hr.d-none.d-lg-block.mb-0.mr-0
 
-        // Signup
+        
         section.signup-section#signup
             div.container
                 div.row
@@ -138,9 +159,9 @@ html(lang='en')
                         //i.far.fa-paper-plane.fa-2x.mb-2.text-white
                         h2.text-white.mb-5
                             | What do some of my clients say about me?
-                        
-        // Contact
-        section.contact-section.bg-black#contact
+                            
+        // Reviews
+        section.contact-section.bg-black#reviews
             div.container
                 div.row
                     div.col-md-4.mb-3.mb-md-0
@@ -152,7 +173,6 @@ html(lang='en')
                                 hr.my-4
                                 div.small.text-black-50
                                     | This was pretty dope, I am now a badass
-
                     div.col-md-4.mb-3.mb-md-0
                         div.card.py-4.h-100
                             div.card-body.text-center
@@ -161,8 +181,7 @@ html(lang='en')
                                     | Bryan
                                 hr.my-4
                                 div.small.text-black-50
-                                    | I have found and conquered my inner bitch, thanks Paul
-                                    
+                                    | I have found and conquered my inner bitch, thanks Paul   
                     div.col-md-4.mb-3.mb-md-0
                         div.card.py-4.h-100
                             div.card-body.text-center
@@ -172,11 +191,26 @@ html(lang='en')
                                 hr.my-4
                                 div.small.text-black-50
                                     | Paul helped me with a diet and exercise plan thats helped me lose weight and gain a lot of self confidence, and strength too! Thanks!
-                                    
-            div.social.d-flex.justify-content-center
-                a.mx-2(href="#!")
-                    i.fab.fa-instagram
-                    
+        
+        // Signup
+        section(class="signup-section" id="signup")
+            div(class="container")
+                div(class="row")
+                    div(class="col-md-10 col-lg-8 mx-auto text-center")
+                        i(class="far fa-envelope-open fa-2x mb-2 text-white")
+                        h2(class="text-white mb-5")
+                            | Interested in Resilience Fitness?
+                        form(class="form-inline d-flex")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myName" type="text" placeholder="Your name...")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myPhone" type="text" placeholder="Your phone number...")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myEmail" type="email" placeholder="Your email address...")
+                            button(class="btn btn-primary mx-auto" id="submit" placeholder="")
+                                | Submit
+                                
+                div.social.d-flex.justify-content-center 
+                    a.mx-2(href="#!") 
+                        i.fab.fa-instagram 
+      
         footer.footer.bg-black.small.text-center.text-white-50
             div.container
                 | Copyright © ResilienceFitness.net 2020
@@ -187,5 +221,9 @@ html(lang='en')
         // Third party plugin JS
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js")
         // Core theme JS
-        script(src="js/scripts.js")
-        //script(src="js/scroll.js")
+        //script(src="js/scripts.js")
+
+        
+        //main js
+        script(src="js/mainJS.js")
+        
