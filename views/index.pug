@@ -200,10 +200,10 @@ html(lang='en')
                         i(class="far fa-envelope-open fa-2x mb-2 text-white")
                         h2(class="text-white mb-5")
                             | Interested in Resilience Fitness?
-                        form(class="form-inline d-flex")
-                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myName" type="text" placeholder="Your name...")
-                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myPhone" type="text" placeholder="Your phone number...")
-                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myEmail" type="email" placeholder="Your email address...")
+                        form(class="form-inline d-flex" id="emailForm")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myName" type="text" placeholder="Your name..." required="true")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myPhone" type="text" placeholder="Your phone number..." required="true")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myEmail" type="email" placeholder="Your email address..." required="true")
                             button(class="btn btn-primary mx-auto" id="submit" placeholder="")
                                 | Submit
                                 
@@ -221,7 +221,7 @@ html(lang='en')
         // Third party plugin JS
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js")
         // Core theme JS
-        //script(src="js/scripts.js")
+        script(src="js/scripts.js")
 
         
         //main js
