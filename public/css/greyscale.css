@@ -7598,7 +7598,7 @@ button.bg-black:focus {
 }
 
 .h-100 {
-  height: 100% !important;
+  height: auto !important;
 }
 
 .h-auto {
