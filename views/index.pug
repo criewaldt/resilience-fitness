@@ -42,13 +42,14 @@ html(lang='en')
                 div.collapse.navbar-collapse#navbarResponsive
                     ul.navbar-nav.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#about") Character  
+                            a.nav-link.js-scroll-trigger(href="#about") About 
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#results") Strength  
+                            a.nav-link.js-scroll-trigger(href="#results") My Results 
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#assessment") Assessment
+                            a.nav-link.js-scroll-trigger(href="#contact") Contact 
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#contact") Contact  
+                            a.nav-link.js-scroll-trigger(href="#assessment") Reviews 
+                         
         // Masthead
         header.masthead
             div.container.d-flex.h-100.align-items-center#top
@@ -106,9 +107,10 @@ html(lang='en')
         section.projects-section.bg-light#results
             div.container
                 div.row.align-items-center.no-gutters.mb-4.mb-lg-5
-                    div.col-12.text-center
-                        p.text
+                    div.col-lg-12.text-center
+                        h5
                             | “Success is not final, failure is not fatal. It is the courage to continue that counts." - Winston Churchill
+                        br
                         br
                         br
                         
@@ -144,17 +146,52 @@ html(lang='en')
                 // Project Two Row
                 div.row.justify-content-center.no-gutters
                     div.col-lg-6
-                        img.img-fluid(src="img/fighterJet.jpg" alt="")
+                        img.img-fluid(src="assets/img/project3.jpg" alt="")
                     div.col-lg-6.order-lg-first
                         div.bg-black.text-center.h-100.project
                             div.d-flex.h-100
                                 div.project-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white
-                                        | Thank You
+                                        | Want to feel great?
+                                    p.mb-0.text-white-50
+                                        | Ignorance and poor execution are common catalysts for injury. I will help improve your exercise execution so that you reduce your risk for injury and get the most out of each activity. I'll also provide the structure you need to focus on results.
+                                    hr.d-none.d-lg-block.mb-0.mr-0
+                
+                // Project One Row
+                div.row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                    div.col-lg-6
+                        img.img-fluid(src="img/fighterJet.jpg" alt="")
+                    div.col-lg-6
+                        div.bg-black.text-center.h-100.project
+                            div.d-flex.h-100
+                                div.project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white
+                                        | Thank You 
                                     p.mb-0.text-white-50
                                         | I am inspired by the service you provide, the people you help and the communities you support. To show gratitude, Resilience Fitness is offering special discounts for military and civil servants.
-                                    hr.d-none.d-lg-block.mb-0.mr-0
-
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                
+                div.row.align-items-center.no-gutters.mb-4.mb-lg-5
+                    div.col-lg-12.text-center
+                        br
+                        
+                    
+                    div.col-xl-6.col-lg-4
+                        div.featured-text.text-center.text-lg-center
+                            h4
+                                | Follow me on social media
+                            br
+                            p.text-black-50.mb-0
+                                | Check out my progress, workouts, favorite inspirational quotes, and more.
+                            br
+                            a(href="https://www.instagram.com/_resilience.fitness")
+                                h1.mx-2
+                                    i.fab.fa-instagram
+                                
+                                
+                    div.col-xl-6.col-lg-8
+                        a(href="https://www.instagram.com/_resilience.fitness")
+                            img.img-fluid.mb-3.mb-lg-0(src="assets/img/paul2.jpg" alt="")
         
         //section.signup-section#signup
         //    div.container
@@ -165,6 +202,28 @@ html(lang='en')
         //                    | What do some of my clients say about me?
         //                    
         // Reviews
+        
+        // Signup
+        section.signup-section#contact
+            div.container
+                div.row
+                    div.col-md-10.col-lg-8.mx-auto.text-center
+                        i.far.fa-envelope-open.fa-2x.mb-2.text-white
+                        h2.text-white.mb-5
+                            | Interested in Resilience Fitness?
+                        form.form-inline.d-flex#emailForm
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myName" type="text" placeholder="Your name..." required="true")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myPhone" type="text" placeholder="Your phone number..." required="true")
+                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myEmail" type="email" placeholder="Your email address..." required="true")
+                            br
+                            br
+                            button.btn.btn-primary.mx-auto#submit
+                                | Submit
+                                
+                //div.social.d-flex.justify-content-center 
+                //    a.mx-2(href="#!") 
+                //        i.fab.fa-instagram 
+        
         section.contact-section.bg-black#assessment
             div.container
                 div.row
@@ -204,30 +263,13 @@ html(lang='en')
                 br
                 br
         
-        // Signup
-        section(class="signup-section" id="contact")
-            div(class="container")
-                div(class="row")
-                    div(class="col-md-10 col-lg-8 mx-auto text-center")
-                        i(class="far fa-envelope-open fa-2x mb-2 text-white")
-                        h2(class="text-white mb-5")
-                            | Interested in Resilience Fitness?
-                        form(class="form-inline d-flex" id="emailForm")
-                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myName" type="text" placeholder="Your name..." required="true")
-                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myPhone" type="text" placeholder="Your phone number..." required="true")
-                            input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myEmail" type="email" placeholder="Your email address..." required="true")
-                            br
-                            br
-                            button(class="btn btn-primary mx-auto" id="submit" placeholder="")
-                                | Submit
-                                
-                //div.social.d-flex.justify-content-center 
-                //    a.mx-2(href="#!") 
-                //        i.fab.fa-instagram 
+        
       
         footer.footer.bg-black.small.text-center.text-white-50
             div.container
-                | Copyright © ResilienceFitness.net 2020
+                | Copyright © ResilienceFitness.net 2020 = Website made by 
+                a(href="http://www.chrisriewaldt.com")
+                    | ChrisR
         
         // Bootstrap core JS
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
