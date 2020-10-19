@@ -44,12 +44,14 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href="#about") Character  
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#projects") Strength  
+                            a.nav-link.js-scroll-trigger(href="#results") Strength  
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href="#contact") Assessment  
+                            a.nav-link.js-scroll-trigger(href="#assessment") Assessment
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href="#contact") Contact  
         // Masthead
         header.masthead
-            div.container.d-flex.h-100.align-items-center
+            div.container.d-flex.h-100.align-items-center#top
                 div.mx-auto.text-center
                     img.img-fluid(src="img/resilienceFitnessBlue.png" alt="")
                     //h1.mx-auto.my-0.text-uppercase
@@ -89,18 +91,20 @@ html(lang='en')
                             br
                             br
                             br
-                            a.btn.btn-primary.js-scroll-trigger(href="#projects")
+                            a.btn.btn-primary.js-scroll-trigger(href="#results")
                                 | Do the work
                             br
                             br
                             br
                             br
-                img.img-fluid(src="img/kettlebellBW.png" alt="")
+                            
+                img.img-fluid.mx-auto.d-block(src="img/kb1.png" alt="")
+        div.container
+            img.img-fluid.mx-auto.d-block(src="img/kb2.png" alt="")
                 
         // Projects
-        section.projects-section.bg-light#projects
+        section.projects-section.bg-light#results
             div.container
-                // Featured Project Row
                 div.row.align-items-center.no-gutters.mb-4.mb-lg-5
                     div.col-12.text-center
                         p.text
@@ -152,17 +156,22 @@ html(lang='en')
                                     hr.d-none.d-lg-block.mb-0.mr-0
 
         
-        section.signup-section#signup
+        //section.signup-section#signup
+        //    div.container
+        //        div.row
+        //            div.col-md-10.col-lg-8.mx-auto.text-center
+        //                //i.far.fa-paper-plane.fa-2x.mb-2.text-white
+        //                h2.text-white.mb-5
+        //                    | What do some of my clients say about me?
+        //                    
+        // Reviews
+        section.contact-section.bg-black#assessment
             div.container
                 div.row
                     div.col-md-10.col-lg-8.mx-auto.text-center
                         //i.far.fa-paper-plane.fa-2x.mb-2.text-white
                         h2.text-white.mb-5
                             | What do some of my clients say about me?
-                            
-        // Reviews
-        section.contact-section.bg-black#reviews
-            div.container
                 div.row
                     div.col-md-4.mb-3.mb-md-0
                         div.card.py-4.h-100
@@ -191,9 +200,12 @@ html(lang='en')
                                 hr.my-4
                                 div.small.text-black-50
                                     | Paul helped me with a diet and exercise plan thats helped me lose weight and gain a lot of self confidence, and strength too! Thanks!
+                br
+                br
+                br
         
         // Signup
-        section(class="signup-section" id="signup")
+        section(class="signup-section" id="contact")
             div(class="container")
                 div(class="row")
                     div(class="col-md-10 col-lg-8 mx-auto text-center")
@@ -204,12 +216,14 @@ html(lang='en')
                             input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myName" type="text" placeholder="Your name..." required="true")
                             input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myPhone" type="text" placeholder="Your phone number..." required="true")
                             input(class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="myEmail" type="email" placeholder="Your email address..." required="true")
+                            br
+                            br
                             button(class="btn btn-primary mx-auto" id="submit" placeholder="")
                                 | Submit
                                 
-                div.social.d-flex.justify-content-center 
-                    a.mx-2(href="#!") 
-                        i.fab.fa-instagram 
+                //div.social.d-flex.justify-content-center 
+                //    a.mx-2(href="#!") 
+                //        i.fab.fa-instagram 
       
         footer.footer.bg-black.small.text-center.text-white-50
             div.container

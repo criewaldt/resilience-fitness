@@ -5,6 +5,10 @@
     */
     (function ($) {
     "use strict"; // Start of use strict
+    
+    $('html, body').animate({
+        scrollTop: $('#top').offset().top
+    }, 'slow');
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
