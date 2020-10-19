@@ -7601,6 +7601,10 @@ button.bg-black:focus {
   height: auto !important;
 }
 
+.h-100-true {
+  height: 100% !important;
+}
+
 .h-auto {
   height: auto !important;
 }
