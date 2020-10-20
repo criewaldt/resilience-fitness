@@ -18,7 +18,7 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER || 'criewaldt@gmail.com',
-    pass: process.env.EMAIL_PASSWORD || 'nrssnfyicsislxkd'
+    pass: process.env.EMAIL_PW || 'nrssnfyicsislxkd'
   }
 });
 
@@ -32,24 +32,30 @@ app.use(express.static(__dirname + '/public'));
 // email post
 app.post('/email', function(req, res) {
     console.log(req.body);
-    //send email
-    var mailOptions = {
-        from: process.env.EMAIL_USER || 'criewaldt@gmail.com',
-        to: process.env.EMAIL_USER || 'criewaldt@gmail.com',
-        subject: 'Interested client from ResilienceFitness.net',
-        text: 'Interested client from ResilienceFitness.net\n\n' +
-            req.body.name + '\n' + req.body.phone + '\n' + req.body.email
-    };
     
-    transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-            console.log(error);
-            res.send('no');
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.send('yes');
-        }
-    });
+    try {
+        //send email
+        var mailOptions = {
+            from: process.env.EMAIL_USER || 'criewaldt@gmail.com',
+            to: process.env.EMAIL_USER || 'criewaldt@gmail.com',
+            subject: 'Interested client from ResilienceFitness.net',
+            text: 'Interested client from ResilienceFitness.net\n\n' +
+                req.body.name + '\n' + req.body.phone + '\n' + req.body.email
+        };
+        
+        transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+                console.log(error);
+                res.send('no');
+            } else {
+                console.log('Email sent: ' + info.response);
+                res.send('yes');
+            }
+        });
+    }
+    catch(err) {
+        console.log('ERROR: sending email failed.');
+    }
     
 });
 
