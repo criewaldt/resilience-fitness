@@ -6477,6 +6477,7 @@ button.bg-black:focus {
 .d-flex {
   display: flex !important;
   vertical-align: middle;
+  align-items:flex-start;
 }
 
 .d-inline-flex {
