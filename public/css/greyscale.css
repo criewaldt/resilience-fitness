@@ -478,6 +478,11 @@ mark,
   height: auto;
 }
 
+.kb-img {
+  max-width: 75% !important;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -7600,6 +7605,8 @@ button.bg-black:focus {
 .h-100 {
   height: auto !important;
 }
+
+
 
 .h-100-true {
   height: 100% !important;
